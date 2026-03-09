@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Aura</title>
+    <link rel="stylesheet" href="empat.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="main-title">
+            <h1>My Certificates</h1>
+            <p>Dokumentasi pencapaian dan perjalanan belajar saya.</p>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="IMG20260308161524.jpg" onclick="openModal(this)" />
+                <div class="desc">Kelompok Terbaik Magang Fisika (ITERA)</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="IMG20260308161533.jpg" onclick="openModal(this)" />
+                <div class="desc">English Course Basic Program</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="IMG20260308161543.jpg" onclick="openModal(this)" />
+                <div class="desc">Third Runner-Up Story Telling</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="IMG20260308161556.jpg" onclick="openModal(this)" />
+                <div class="desc">English Course Elementary Program</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="Photo from Aura.jpg" onclick="openModal(this)" />
+                <div class="desc">Group Photo Mini Riset Instrumentasi</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="gr.jpg" onclick="openModal(this)" />
+                <div class="desc">Group Photo English Course</div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="img01">
+            <div id="caption"></div>
+        </div>
+    </div>
+
+    <script>
+        function openModal(element) {
+            document.getElementById("myModal").style.display = "block";
+            document.getElementById("img01").src = element.src;
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var modal = document.getElementById("myModal");
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

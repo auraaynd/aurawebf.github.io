@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f7f4;
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.main-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-title h1 {
+    color: #2e7d32;
+    font-size: 32px;
+}
+
+.main-title p {
+    color: #777;
+    font-size: 14px;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.progress-line {
+    height: 12px;
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-line span {
+    height: 100%;
+    background: #2e7d32;
+    display: block;
+    border-radius: 10px;
+    animation: slideIn 2s ease-out forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+
+@keyframes slideIn {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.progress-line span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    animation: shine 2s infinite;
+}
+
+@keyframes shine {
+    0% {
+        left: -100%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
