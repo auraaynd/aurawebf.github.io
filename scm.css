@@ -1,0 +1,29 @@
+.social-links {
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px dashed #e8f5e9;
+}
+
+.social-links p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.btn-ig {
+    display: inline-block;
+    background: #2e7d32;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-ig:hover {
+    background: #e91e63;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+}
